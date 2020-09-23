@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <meta name="viewport" id="viewport" content="initial-scale=1.0, width=device-width" />
+    </head>
+    <body>
+        <p>Run this page under the Emulator as a Mobile Device, compared to Chrome on an actual Android device.</p>
+        <h3>Parent:</h3>
+        <script>
+            document.write(`onorientationchange:${window.onorientationchange===null}<br />orientation:${window.orientation}<br />availWidth:${window.screen.availWidth}<br />availHeight:${window.screen.availHeight}`)            
+        </script>
+        <h3>Same Domain iFrame:</h3>
+        <iframe src="child.html"></iframe>
+        <h3>Cross Origin Domain iFrame:</h3>
+        <iframe src="https://raw.githubusercontent.com/makit/"></iframe>
+    </body>
+</html>
